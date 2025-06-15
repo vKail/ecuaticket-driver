@@ -12,9 +12,6 @@ const BackgroundCircles: React.FC = () => {
 
       {/* Círculos para MÓVIL */}
       <div className="block lg:hidden fixed inset-0 overflow-hidden pointer-events-none z-[50]">
-        {/* Círculo de debug (puedes eliminar esto si ya funciona) */}
-        {/* <div className="absolute top-1/2 left-1/2 w-10 h-10 bg-red-500 rounded-full z-[999]" /> */}
-
         {/* Superiores */}
         <div className="absolute right-[-70px] top-[10px] w-[200px] h-[200px] bg-[#F9AE2B] rounded-full" />
         <div className="absolute right-[40px] top-[-100px] w-[180px] h-[180px] bg-[#A30D19] rounded-full" />
