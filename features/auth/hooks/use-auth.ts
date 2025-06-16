@@ -15,7 +15,7 @@ export const useLogin = () => {
     const result = await loginNextAuth(response);
     if (result.status === "success") {
       toast.success(result.message);
-      router.push("/qr-reader");
+      router.push("/qr-code");
     } else {
       toast.error(result.message);
     }
