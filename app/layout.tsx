@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GeneralProvider } from "@/core/providers/general-provider";
+import BackgroundCircles from "@/shared/components/layout/background-circles";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <BackgroundCircles />
         <GeneralProvider>{children}</GeneralProvider>
       </body>
     </html>
