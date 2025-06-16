@@ -65,7 +65,7 @@ export const LoginForm: React.FC = () => {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      type="email"
+                      type="text"
                       placeholder="example@example.com"
                       autoComplete="username"
                       className="h-12 px-4 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-gray-400"
@@ -82,7 +82,7 @@ export const LoginForm: React.FC = () => {
               render={({ field }) => (
                 <FormItem className="space-y-2">
                   <FormLabel className="text-sm font-medium text-primary">
-                    Contraseña
+                    Iniciar Sesión
                   </FormLabel>
                   <FormControl>
                     <Input
