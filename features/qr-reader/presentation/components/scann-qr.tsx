@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { QrValidationResult } from "./qr-validation-result";
 import { Camera, CameraOff } from "lucide-react";
 import { useQrScannerHtml5 } from "../../hooks/use-qr-scaner";
-import "../../styles/qr-reader.css";
+// import "../../styles/qr-reader.css";
 
 interface QrScannerHtml5Props {
   onScanResult?: (isValid: boolean, accessCode?: string) => void;
