@@ -6,6 +6,8 @@ import "./globals.css";
 import { GeneralProvider } from "@/core/providers/general-provider";
 import BackgroundCircles from "@/shared/components/layout/background-circles";
 import { usePathname } from "next/navigation";
+import { MobileNavBar } from "@/shared/components/layout/mobile-nav-bar";
+import { cn } from "@/lib/utils";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,14 +36,20 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
   const showBackground = pathname === "/login";
+  const showMobileNav = ["/qr-code", "/route-sheets"].includes(pathname);
 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(
+          `${geistSans.variable} ${geistMono.variable} antialiased`,
+          // Add padding-bottom on mobile to avoid content being hidden by the nav bar
+          { "pb-16 sm:pb-0": showMobileNav }
+        )}
       >
         {showBackground && <BackgroundCircles />}
         <GeneralProvider>{children}</GeneralProvider>
+        {showMobileNav && <MobileNavBar />}
       </body>
     </html>
   );

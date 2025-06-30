@@ -45,8 +45,10 @@ export const RouteSheetsView = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Mis Hojas de Ruta</h1>
+    <div className="w-full max-w-4xl">
+      <h1 className="text-2xl font-bold mb-4 text-center sm:text-left">
+        Mis Hojas de Ruta
+      </h1>
       <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
         <div className="w-full sm:w-auto">
           <Label htmlFor="date-picker">Selecciona una fecha</Label>
