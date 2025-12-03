@@ -75,4 +75,4 @@ src/
 
 -   **Adrian Jurado** - [@vKail](https://github.com/vKail "null")
 -   **Emilia Galarza** - [@Emi1213](https://github.com/Emi1213 "null")
-    
+-   **Sebastian Camino** - [@scaminom](https://github.com/scaminom "null")
